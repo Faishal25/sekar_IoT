@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Dicoding Indonesia</title>
+
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- CSS Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="asset/img/product-logo.png" alt="My Product" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a onclick="GoBeranda()">Beranda</a></li>
+          <li><a onclick="GoFitur()">Fitur</a></li>
+          <li><a onclick="GoBuild()">Pembuat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Akhir Navigasi Bar -->
+
+    <main>
+      <div id="content">
+        <article class="beranda" id="Beranda">
+          <div class="content-image">
+            <img src="asset/img/produk1.png" alt="Our Product" />
+          </div>
+          <div class="content-description">
+            <h1 class="title">SEKAR IOT</h1>
+            <p>
+              Sekar IoT merupakan implementasi alat di bidang smart energy untuk mengendalikan biaya listrik melalui monitoring dan kontrol pada penggunaan listrik yang dapat dioperasikan secara jarak jauh dan hasil yang real time.
+              Dilengkapi dengan penerapan teknologi muktahir, Produk ini diharapkan dapat membantu orang dalam mengontrol penggunaan listrik mereka kapanpun dan dimanapun.
+            </p>
+            <div class="tombol">
+              <button>Lebih lanjut</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="fitur">
+          <div id="Fitur">
+            <h1 class="title-fitur">Fitur</h1>
+          </div>
+          <div class="konten">
+            <div class="content-image">
+              <img src="asset/img/produk2.png" alt="Fitur" />
+            </div>
+            <div class="content-description">
+              <h1 class="title">Monitoring</h1>
+              <p>
+                Sekar IoT ini dilengkapi dengan fitur pengukuran dengan sistem kalibrasi dengan peralatan pengukuran listrik profesional sehingga pengukuran menjadi lebih akurat. Disini pengguna dapat memonitoring perangkat listrik yang
+                terhubung dengan sistem kami dengan akurat yang dapat digunakan kapanpun dan dimanapun anda berada. Pengguna dapat memonitoring tegangan, energi, Daya, dan biaya yang akan dihabiskan dalam penggunaan peralatan listrik anda.
+              </p>
+            </div>
+          </div>
+          <div class="konten1">
+            <div class="content-description">
+              <h1 class="title">Controlling</h1>
+              <p>
+                Sekar IoT ini dilengkapi dengan fitur pengontrolan peralatan listrik dari jarak jauh yang terhubung dengan perangkat. Disini pengguna dapat mengatur jumlah batasan Kwh Listrik yang akan digunakan, lalu pengguna dapat
+                mematikan atau menyalakan peralatan listrik mereka dengan menggunakan aplikasi. Sistem ini juga memiliki sistem automasi dimana saat batasan Kwh yang diset telah terlampaui, maka sistem peralatan listrik akan otomatis mati
+                dan memberi tahu pengguna bahwa penggunaan listrik sudah melampaui batasan yang sudah diset.
+              </p>
+            </div>
+            <div class="content-image">
+              <img src="asset/img/produk3.png" alt="Fitur" />
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Bagian Awal Profil -->
+      <aside>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" onclick="OpenProf()"><i class="fa fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <aside>
+        <div class="profile" id="profile">
+          <div class="isi-profile">
+            <img src="asset/img/Profil.png" alt="" />
+            <p>Muhammad Faishal Azhar Suherman</p>
+            <p>IoT and Cloud Engineer</p>
+            <button class="buttontutup" onclick="CloseProf()">Close</button>
+          </div>
+        </div>
+      </aside>
+      <!-- Bagian Akhir Profile -->
+    </main>
+    <footer id="buat">
+      <p>Created By <i class="fa fa-star"></i> <a href="https://www.instagram.com/suhermanazhar/">Muhammad Faishal Azhar Suherman</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
